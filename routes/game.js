@@ -8,11 +8,4 @@ router.post('/', (req, res) => {
     res.render('game');
 })
 
-router.post('/', (req, res) => {
-    req.app.locals.currentPlayer = player;
-    res.render('game');
-})
-
-
-
 

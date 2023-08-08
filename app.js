@@ -18,3 +18,5 @@ app.use('/turn', turn);
 app.listen(port, host, () => {
     console.log(`Listening at http://localhost:${port}`);
 });
+
+export default app;
