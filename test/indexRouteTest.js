@@ -4,10 +4,10 @@ import app from "../app.js";
 
 chai.use(chaiHttp);
 
-describe('index router tests', () => { 
+describe('index router tests', () => {
 
     it("should handle a 'get' request to '/' http://localhost:3000", async () => {
-    
+
         //arrange
         //act
         const res = await chai.request(app).get('/').send();
@@ -15,6 +15,6 @@ describe('index router tests', () => {
         //expect
         expect(res).to.have.status(200);
 
-})
+    })
 
- })
+})

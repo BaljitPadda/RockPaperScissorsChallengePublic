@@ -4,10 +4,10 @@ import app from "../app.js";
 
 chai.use(chaiHttp);
 
-describe('game router tests', () => { 
+describe('game router tests', () => {
 
     it("should handle a 'post' request to the game page", async () => {
-    
+
         //arrange
         //act
         const res = await chai.request(app).post('/game').send();
@@ -16,7 +16,7 @@ describe('game router tests', () => {
         expect(res).to.have.status(200);
 
     })
-    
+
     it("should receive a player's name", async () => {
 
         //arrange
@@ -30,4 +30,4 @@ describe('game router tests', () => {
 
     })
 
- })
+})

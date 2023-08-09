@@ -4,7 +4,7 @@ class Player {
     }
 
     playerSelection = "";
-    
+
 }
 
 export default Player;

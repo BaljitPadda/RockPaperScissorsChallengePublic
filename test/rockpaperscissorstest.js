@@ -3,7 +3,7 @@ import RockPaperScissors from "../src/rockpaperscissors.js";
 
 describe("RockPaperScissor class tests", () => {
     it("should generate the computer's choice from the generateComputerSelection() method", () => {
-    
+
         //arrange
         const player = "Joe";
         const game = new RockPaperScissors(player);
@@ -12,9 +12,9 @@ describe("RockPaperScissor class tests", () => {
         const result = game.generateComputerSelection();
 
         //assert
-        expect(result).to.be.oneOf( ["rock", "paper", "scissors"] );
+        expect(result).to.be.oneOf(["rock", "paper", "scissors"]);
     })
-    
+
     it("should calculate the result of a game from the calculateResult() method", () => {
 
         //arrange
@@ -33,7 +33,7 @@ describe("RockPaperScissor class tests", () => {
         const result7 = game.calculateResult("scissors", "scissors");
         const result8 = game.calculateResult("scissors", "rock");
         const result9 = game.calculateResult("scissors", "paper");
-        
+
         //assert
         expect(result1).to.equal("It's a tie!");
         expect(result2).to.equal("Computer wins!");

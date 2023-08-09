@@ -1,5 +1,3 @@
-import RockPaperScissors from '../src/rockpaperscissors.js';
-import Player from '../src/player.js';
 import express from 'express';
 export const router = express.Router();
 
