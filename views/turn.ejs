@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body span class="border" style="margin: 15px; padding: 8px";>
-    <h1> <%= `Thanks for your choice! You chose: ${myselection}` %> </h1>
-    <h1> The computer chooses: <%= `${computerselection}` %> </h1>
+    <h1> <%= `Thanks for your choice! You chose: ${game.player.playerSelection}` %> </h1>
+    <h1> The computer chooses: <%= `${game.computerSelection}` %> </h1>
 
-    <h1> Result = <%= `${result}` %> </h1>
+    <h1> Result = <%= `${game.result}` %> </h1>
 
     <form action="/game" method="post">
         <input type="submit" id="submit" value="Play Again?">
     </form>
     
-        <script src=”https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js”
-            integrity=”sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ” crossorigin=”anonymous”>
-            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ describe('game router tests', () => {
 
     })
     
-    it("should store a player's name", async () => {
+    it("should receive a player's name", async () => {
 
         //arrange
         const playername = "Spidey";

@@ -1,4 +1,20 @@
-# RPS Challenge
+# Rock Paper Scissors Challenge
+
+# My Solution to the Rock Paper Scissors Challenge
+
+Installation Instructions
+-------
+```
+Please fork and clone to your machine.
+Please run "npm install" in the terminal.
+Please use "npm run start" to start the local server.
+Please use "npm test" to run the tests.
+
+Enjoy Rock Paper Scissors! 
+```
+
+_____
+
 
 Instructions
 -------

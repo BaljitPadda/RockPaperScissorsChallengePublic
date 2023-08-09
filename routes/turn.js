@@ -1,27 +1,16 @@
+import RockPaperScissors from '../src/rockpaperscissors.js';
+import Player from '../src/player.js';
 import express from 'express';
 export const router = express.Router();
 
 router.post('/', (req, res) => {
-    req.app.locals.myselection = req.body.myselection;
-    let computersguess = computerselection();
-    req.app.locals.computerselection = computersguess;
-    req.app.locals.result = result(req.body.myselection, computersguess);
-    res.render('turn');
+    const game = req.app.locals.game;
+
+    if (req.body.mySelection == 'undefined') {
+        res.status(400).send("Select one option to proceed");
+    } else {
+        game.turn(req.body.mySelection);
+        res.render('turn');
+    }
 
 });
-
- function computerselection() {
-     let number = Math.floor(Math.random() * 3);
-     let computerselection;
-    if (number == 0) return computerselection = "rock";
-    else if (number == 1) return computerselection = "paper";
-    else if (number == 2) return computerselection = "scissors";
- }
-
-function result(myselection, computerselection) {
-    if (myselection  == computerselection) return ("It's a tie!")
-     else if (myselection == "rock" && computerselection == "paper") return ("Computer wins!")
-     else if (myselection == "paper" && computerselection == "scissors") return ("Computer wins!")
-     else if (myselection == "scissors" && computerselection == "rock") return ("Computer wins!")
-     else return ("You win!")
- }
