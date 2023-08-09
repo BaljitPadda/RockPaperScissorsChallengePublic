@@ -12,7 +12,7 @@ describe('game router tests', () => {
         //act
         const res = await chai.request(app).post('/game').send();
 
-        //expect
+        //assert
         expect(res).to.have.status(200);
 
     })

@@ -12,7 +12,7 @@ describe('turn router tests', () => {
         //act
         const res = await chai.request(app).post('/turn').send();
 
-        //expect
+        //assert
         expect(res).to.have.status(200);
 
     })
